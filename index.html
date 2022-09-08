@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <title>Calculator</title>
+</head>
+
+<body>
+   <div class="switch">
+      <img src="./Media/dayMode.png" alt="" class="dayModeImg">
+      <input type="checkbox" class="darkModeSwitch">
+      <span class="sliderBall"></span>
+      <img src="./Media/nightMode.png" alt="" class="nightModeImg">
+   </div>
+   <div class="template">
+      <div class="container">
+         <div class="calculatorScreenDiv">
+            <div class="totalAnswerDiv">
+               <span id="total">0</span>
+            </div>
+            <div class="calculationDiv">
+               <p class="calculate"></p>
+               <span class="operatorsSpan"></span>
+            </div>
+         </div>
+         <div class="calculatorButtonsDiv">
+            <div id="buttonsList">
+               <button class="operators" id="AC">AC</button>
+               <button class="operators" id="backspace"></button>
+               <button class="operators" id="percent">%</button>
+               <button class="operators" id="division"></button>
+               <button class="numbers" id="button7">7</button>
+               <button class="numbers" id="button8">8</button>
+               <button class="numbers" id="button9">9</button>
+               <button class="operators" id="multiplication"></button>
+               <button class="numbers" id="button4">4</button>
+               <button class="numbers" id="button5">5</button>
+               <button class="numbers" id="button6">6</button>
+               <button class="operators" id="subtraction">-</button>
+               <button class="numbers" id="button1">1</button>
+               <button class="numbers" id="button2">2</button>
+               <button class="numbers" id="button3">3</button>
+               <button class="operators" id="addition">+</button>
+               <button class="numbers" id="button0">0</button>
+               <button class="operators" id="buttonDot">.</button>
+               <button class="operators" id="equalsTo">=</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <script src="app.js"></script>
+   <script src="darkMode.js"></script>
+</body>
+
+</html>
