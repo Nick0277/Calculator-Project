@@ -201,16 +201,22 @@ body {
 
 .switch {
    position: relative;
-   width: 70px;
-   height: 35px;
-   margin: 5% auto;
-   background-color: #4cc9f0;
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 70px;
+   height: 35px;
+   background-color: #4cc9f0;
    border-radius: 32px;
    -webkit-transition: .4s;
    transition: 0.4s;
+}
+
+.switchContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5%;
 }
 
 .sliderBall {
@@ -234,16 +240,17 @@ body {
 }
 
 .darkModeSwitch {
-   position: absolute;
    width: 100%;
    height: 100%;
    opacity: 0;
+   position: absolute;
 }
 
 @media screen and (max-width: 380px) {
    .template {
       width: 19em;
       height: 36em;
+
    }
 
    .numbers {
@@ -258,5 +265,55 @@ body {
 
    .totalAnswerDiv {
       font-size: 3.4em;
+   }
+
+   .calculatorScreenDiv {
+      margin-top: -1.5em;
+   }
+}
+
+@media screen and (max-height: 810px) {
+   .switchContainer {
+      margin-top: 1%;
+   }
+}
+
+@media screen and (max-height: 770px) {
+   .template {
+      height: 40em;
+   }
+
+   .calculatorScreenDiv {
+      margin-top: -2em;
+   }
+}
+
+@media screen and (max-height: 685px) {
+   .template {
+      height: 36.5em;
+   }
+
+   .switchContainer {
+      margin-top: 1%;
+   }
+
+   .switch {
+      width: 62px;
+      height: 30px;
+   }
+
+   .sliderBall {
+      width: 23px;
+      height: 23px;
+   }
+}
+
+@media screen and (max-height: 655px) {
+   .template {
+      height: 34em;
+   }
+
+   .calculatorScreenDiv {
+      margin-top: -2em;
    }
 }
